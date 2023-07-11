@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MenuPageFragment">
+
+    <fragment
+        android:id="@+id/MenuPageFragment"
+        android:name="com.oo.galactictroopers.MenuPageFragment"
+        android:label="fragment_menu_page"
+        tools:layout="@layout/fragment_menu_page" >
+        <action
+            android:id="@+id/action_MenuPageFragment_to_startGameFragment"
+            app:destination="@id/startGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startGameFragment"
+        android:name="com.oo.galactictroopers.StartGameFragment"
+        android:label="fragment_start_game"
+        tools:layout="@layout/fragment_start_game" >
+        <action
+            android:id="@+id/action_startGameFragment_to_storyTellFragment"
+            app:destination="@id/storyTellFragment" />
+        <action
+            android:id="@+id/action_startGameFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+        <action
+            android:id="@+id/action_startGameFragment_to_optionsFragment"
+            app:destination="@id/optionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePlayFragment"
+        android:name="com.oo.galactictroopers.GamePlayFragment"
+        android:label="fragment_game_play"
+        tools:layout="@layout/fragment_game_play" />
+    <fragment
+        android:id="@+id/storyTellFragment"
+        android:name="com.oo.galactictroopers.StoryTellFragment"
+        android:label="fragment_story_tell"
+        tools:layout="@layout/fragment_story_tell" >
+        <action
+            android:id="@+id/action_storyTellFragment_to_gamePlayFragment"
+            app:destination="@id/gamePlayFragment" />
+        <action
+            android:id="@+id/action_storyTellFragment_to_startGameFragment"
+            app:destination="@id/startGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.oo.galactictroopers.ConfirmationFragment"
+        android:label="fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation" >
+        <action
+            android:id="@+id/action_confirmationFragment_to_startGameFragment"
+            app:destination="@id/startGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/optionsFragment"
+        android:name="com.oo.galactictroopers.OptionsFragment"
+        android:label="fragment_options"
+        tools:layout="@layout/fragment_options" >
+        <action
+            android:id="@+id/action_optionsFragment_to_startGameFragment"
+            app:destination="@id/startGameFragment" />
+    </fragment>
+</navigation>

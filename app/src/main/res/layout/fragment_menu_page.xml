@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuPageFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solar_system1"
+    tools:context=".MenuPageFragment">
+
+    <ImageView
+        android:id="@+id/spaceship4Image"
+        android:layout_width="64dp"
+        android:layout_height="141dp"
+        android:contentDescription="@string/purple_spaceship"
+        android:src="@drawable/spaceship4"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/spaceship3Image"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/spaceship3Image"
+        android:layout_width="64dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginBottom="83dp"
+        android:contentDescription="@string/yellow_spaceship"
+        android:src="@drawable/spaceship3"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logoImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/spaceship2Image"
+        android:layout_width="64dp"
+        android:layout_height="141dp"
+        android:contentDescription="@string/pink_spaceship"
+        android:src="@drawable/spaceship2"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toStartOf="@+id/spaceship3Image"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/spaceship1Image"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/startButton"
+        android:layout_width="291dp"
+        android:layout_height="151dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:contentDescription="@string/start_game_of_galactic_troopers"
+        android:scaleType="fitXY"
+        android:src="@drawable/start_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="354dp"
+        android:layout_height="283dp"
+        android:layout_marginBottom="112dp"
+        android:contentDescription="@string/galactic_troopers_game_logo"
+        android:src="@drawable/galactic_troopers"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <ImageView
+        android:id="@+id/spaceship1Image"
+        android:layout_width="64dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginBottom="83dp"
+        android:contentDescription="@string/blue_spaceship"
+        android:src="@drawable/spaceship1"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logoImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

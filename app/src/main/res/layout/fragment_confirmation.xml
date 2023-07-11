@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmationFragment">
+
+    <ImageView
+        android:id="@+id/solarSystemView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/solar_system1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ConfirmationQuestionView"
+        android:layout_width="337dp"
+        android:layout_height="349dp"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/solarSystemView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/solarSystemView"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <ImageButton
+        android:id="@+id/yesButton"
+        android:layout_width="136dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/confirm_exit"
+        android:src="@drawable/confirm_exit"
+        app:layout_constraintBottom_toBottomOf="@+id/solarSystemView"
+        app:layout_constraintEnd_toEndOf="@+id/solarSystemView"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="@+id/solarSystemView"
+        app:layout_constraintTop_toTopOf="@+id/solarSystemView"
+        app:layout_constraintVertical_bias="0.906"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/noButton"
+        android:layout_width="165dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/cancel_exit"
+        android:src="@drawable/cancel_exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/yesButton"
+        app:layout_constraintTop_toTopOf="@+id/solarSystemView"
+        app:layout_constraintVertical_bias="0.936"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

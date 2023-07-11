@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startGameFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solar_system1"
+    tools:context=".StartGameFragment">
+
+    <ImageView
+        android:id="@+id/rotatingPlanetsView"
+        android:layout_width="409dp"
+        android:layout_height="373dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/rotating_planets"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458"
+        app:srcCompat="@drawable/rotating_planets" />
+
+    <ImageView
+        android:id="@+id/starView2"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="@+id/rotatingPlanetsView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/musicOffButton"
+        app:layout_constraintTop_toBottomOf="@+id/exitButton"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <ImageButton
+        android:id="@+id/musicOffButton"
+        android:layout_width="98dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/music_off_button"
+        app:layout_constraintBottom_toBottomOf="@+id/rotatingPlanetsView"
+        app:layout_constraintEnd_toEndOf="@+id/rotatingPlanetsView"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="@+id/rotatingPlanetsView"
+        app:layout_constraintTop_toTopOf="@+id/rotatingPlanetsView"
+        app:layout_constraintVertical_bias="0.97"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/musicOnButton"
+        android:layout_width="98dp"
+        android:layout_height="101dp"
+        android:background="@drawable/music_on_button"
+        app:layout_constraintBottom_toBottomOf="@+id/rotatingPlanetsView"
+        app:layout_constraintEnd_toEndOf="@+id/rotatingPlanetsView"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="@+id/rotatingPlanetsView"
+        app:layout_constraintTop_toTopOf="@+id/rotatingPlanetsView"
+        app:layout_constraintVertical_bias="0.97"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/exitButton"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="282dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/exit_button"
+        app:layout_constraintBottom_toBottomOf="@+id/rotatingPlanetsView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rotatingPlanetsView"
+        app:layout_constraintVertical_bias="0.139"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/optionsButton"
+        android:layout_width="106dp"
+        android:layout_height="52dp"
+        android:background="@drawable/options_button"
+        app:layout_constraintBottom_toBottomOf="@+id/rotatingPlanetsView"
+        app:layout_constraintEnd_toStartOf="@+id/exitButton"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toTopOf="@+id/rotatingPlanetsView"
+        app:layout_constraintVertical_bias="0.336"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="265dp"
+        android:background="@drawable/play_button"
+        android:scaleType="fitXY"
+        android:src="@drawable/play_button"
+        app:layout_constraintBottom_toBottomOf="@+id/rotatingPlanetsView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rotatingPlanetsView"
+        app:layout_constraintVertical_bias="0.139"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/starView1"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="@+id/rotatingPlanetsView"
+        app:layout_constraintEnd_toStartOf="@+id/musicOnButton"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playButton"
+        app:layout_constraintVertical_bias="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
